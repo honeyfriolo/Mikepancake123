@@ -14,18 +14,24 @@ function App() {
       className="d-flex align-items-center justify-content-center"
       style={{ minHeight: "100vh" }}
     >
-      <div className="w-100" style={{ maxWidth: "400px" }}>
         <Router>
           <AuthProvider>
             <Switch>
+              <div className="w-100 ">
+              <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
               <PrivateRoute exact path="/" component={Dashboard} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
+              </nav>
+              </div>
+              
+              <div className="w-100" style={{ maxWidth: "400px" }}>
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
+              </div>
             </Switch>
           </AuthProvider>
         </Router>
-      </div>
+     
     </Container>
   )
 }

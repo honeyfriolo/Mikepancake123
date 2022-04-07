@@ -43,6 +43,7 @@ export default function UpdateProfile() {
 
   return (
     <>
+    
       <Card>
         <Card.Body>
           <h2 className="text-center mb-4">Update Profile</h2>
