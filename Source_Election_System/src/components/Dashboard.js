@@ -46,34 +46,52 @@ export default function Dashboard() {
                   Update Profile
                 </a>
               </li>
-              <Button className="text-light" variant="link" onClick={handleLogout}>
-          Log Out
-        </Button>
+              <Button
+                className="text-light"
+                variant="link"
+                onClick={handleLogout}
+              >
+                Log Out
+              </Button>
             </ul>
-         
-           
           </div>
         </div>
       </nav>
+    
+    
+<div class="container bootstrap snippets bootdey">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="img-polaroid profile-img img-thumbnail " />
+        </div>
 
-      {/* <div className="w-100 text-center mt-2 ">
-        <nav class="navbar navbar-light ">
-          <span class="navbar-brand mb-0 h1">Source Election 2021-2022</span>
-        </nav>
-        <Button variant="link" onClick={handleLogout}>
-          Log Out
-        </Button>
+        <div class="col-md-12  text-center">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="alert alert-success pull-right hide">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                You gave a rating of <span id="count">0</span> star(s)
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="text-primary"><span class="glyphicon glyphicon-user"></span>John Doe<p class="lead">Please click the stars to vote</p></h2>
+            </div>
+          </div>
+          <div class="row lead">
+            <div class="col-md-12  text-center">
+              <div id="stars" class="starrr text-warning"></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <Card>
-        <Card.Body>
-          <h2 className="text-center mb-4">Profile</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <strong>Email:</strong> {currentUser.email}
-          <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
-            Update Profile
-          </Link>
-        </Card.Body>
-      </Card> */}
+    </div>
+  </div>
+</div>
+    
     </>
   );
 }
