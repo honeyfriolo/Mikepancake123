@@ -37,17 +37,12 @@ export default function Dashboard() {
           <div class="collapse navbar-collapse" id="navbarExample01">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 font-weight-bold">
               <li class="nav-item active">
-                <a class="nav-link text-light" aria-current="page" href="#">
+                <p className="text-light pt-3 " >
                   Source Election 2021-2022
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="/update-profile">
-                  Update Profile
-                </a>
+                </p>
               </li>
               <Button
-                className="text-light"
+                className="text-light ml-5"
                 variant="link"
                 onClick={handleLogout}
               >
