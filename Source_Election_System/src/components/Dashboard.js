@@ -42,7 +42,7 @@ export default function Dashboard() {
                 </p>
               </li>
               <Button
-                className="text-light ml-5"
+                className="text-light ml-5 float-right "
                 variant="link"
                 onClick={handleLogout}
               >
