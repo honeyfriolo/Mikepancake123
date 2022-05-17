@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Result from "./Result";
+import Dashboard from "./Dashboard"
 
 // import { render } from "react-dom";
 import _ from "lodash";
@@ -142,7 +142,7 @@ const cards = [
 ];
 
 const Home = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading] = useState(false);
   const [voteForA, setVoteForA] = useState(0);
   const [voteForB, setVoteForB] = useState(0);
   const [voted, setVoted] = useState(false);
@@ -180,6 +180,11 @@ const Home = () => {
       </Button> */}
 
       {/* 0- 0 */}
+
+      <div>
+        <Dashboard />
+      </div>
+
       <div>
         {voteForA} - {voteForB}
       </div>

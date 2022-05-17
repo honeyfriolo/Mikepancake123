@@ -3,10 +3,9 @@ import Signup from "./Signup"
 import { Container } from "react-bootstrap"
 import { AuthProvider } from "../contexts/AuthContext"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import Dashboard from "./Dashboard"
+import Home from "./Home"
 import Login from "./Login"
 import PrivateRoute from "./PrivateRoute"
-import Vote from "./Vote"
 import Result from "./Result"
 
 function App() {
@@ -19,8 +18,7 @@ function App() {
           <AuthProvider>
             <Switch>
            
-              <PrivateRoute exact path="/" component={Dashboard} />
-              <Route path="/vote" component={Vote} />
+              <PrivateRoute exact path="/" component={Home} />
               <Route path="/Result" component={Result} />
               <div className="w-100" style={{ maxWidth: "400px" }}>
               <Route path="/signup" component={Signup} />
