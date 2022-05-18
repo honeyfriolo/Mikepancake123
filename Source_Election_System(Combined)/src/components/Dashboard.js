@@ -41,16 +41,18 @@ export default function Dashboard() {
                   Source Election 2021-2022
                 </p>
               </li>
-              <Button
+              
+            </ul>
+          </div>
+          <Button
                 className="text-light ml-5 float-right "
                 variant="link"
                 onClick={handleLogout}
               >
                 Log Out
               </Button>
-            </ul>
-          </div>
         </div>
+        
       </nav>
 
     </>
